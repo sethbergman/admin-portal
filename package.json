@@ -3,23 +3,12 @@
   "version": "1.0.1",
   "description": "Admin dashboard with several UI components",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/puikinsh/gentelella.git"
+    "url": "git+https://github.com/OperationCode/operationcode-jobs.git"
   },
-  "keywords": [
-    "css",
-    "js",
-    "html",
-    "template",
-    "admin",
-    "bootstrap",
-    "theme",
-    "backend",
-    "responsive"
-  ],
   "author": "Seth Bergman",
   "contributors": [
     "..."

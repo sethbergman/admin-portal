@@ -40,9 +40,9 @@ gulp.task('sass-minify', function() {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: './'
+            baseDir: 'views'
         },
-        startPath: './views/index.html'
+        startPath: './index.html'
     });
 });
 
