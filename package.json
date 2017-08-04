@@ -1,0 +1,55 @@
+{
+  "name": "operationcode-jobs",
+  "version": "1.0.1",
+  "description": "Admin dashboard with several UI components",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puikinsh/gentelella.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "template",
+    "admin",
+    "bootstrap",
+    "theme",
+    "backend",
+    "responsive"
+  ],
+  "author": "Seth Bergman",
+  "contributors": [
+    "..."
+  ],
+  "license": "MIT",
+  "main": "build/js/bundle.js",
+  "bugs": {
+    "url": "https://github.com/OperationCode/operationcode-jobs"
+  },
+  "homepage": "https://github.com/OperationCode/operationcode-jobs#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "busboy": "^0.2.14",
+    "consolidate": "^0.14.5",
+    "express": "^3.21.2",
+    "good": "^7.2.0",
+    "jsonwebtoken": "^7.4.1",
+    "node-sass-middleware": "^0.11.0",
+    "passport": "^0.3.2",
+    "path": "^0.12.7",
+    "swig": "^1.4.2",
+    "winston": "^2.3.1"
+  }
+}
