@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/OperationCode/operationcode-jobs"
   },
-  "homepage": "https://github.com/OperationCode/operationcode-jobs#readme",
+  "homepage": "http://jobs.sethbergman.engineer",
   "devDependencies": {
     "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
@@ -33,7 +33,6 @@
     "busboy": "^0.2.14",
     "consolidate": "^0.14.5",
     "express": "^3.21.2",
-    "good": "^7.2.0",
     "jsonwebtoken": "^7.4.1",
     "node-sass-middleware": "^0.11.0",
     "passport": "^0.3.2",
