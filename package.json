@@ -1,5 +1,5 @@
 {
-  "name": "operationcode-jobs",
+  "name": "admin-portal",
   "version": "1.0.1",
   "description": "Admin dashboard with several UI components",
   "scripts": {
@@ -7,18 +7,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OperationCode/operationcode-jobs.git"
+    "url": "git+https://github.com/sethbergman/admin-portal.git"
   },
   "author": "Seth Bergman",
   "contributors": [
     "..."
   ],
   "license": "MIT",
-  "main": "build/js/bundle.js",
+  "main": "server.js",
   "bugs": {
-    "url": "https://github.com/OperationCode/operationcode-jobs"
+    "url": "https://github.com/sethbergman/admin-portal"
   },
-  "homepage": "http://jobs.sethbergman.engineer",
+  "homepage": "http://admin-portal.npmstack.com",
   "devDependencies": {
     "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
