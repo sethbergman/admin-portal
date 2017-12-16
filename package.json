@@ -5,10 +5,7 @@
   "scripts": {
     "start": "node server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sethbergman/admin-portal.git"
-  },
+  "repository": "git+https://github.com/sethbergman/admin-portal.git",
   "author": "Seth Bergman",
   "contributors": [
     "..."
