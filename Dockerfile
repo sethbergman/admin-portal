@@ -1,21 +1,39 @@
-# Dockerfile
-FROM node:8
+## BUILDING
+##   (from project root directory)
+##   $ docker build -t node-js-for-sethbergman-admin-portal .
+##
+## RUNNING
+##   $ docker run -p 3000:3000 node-js-for-sethbergman-admin-portal
+##
+## CONNECTING
+##   Lookup the IP of your active docker host using:
+##     $ docker-machine ip $(docker-machine active)
+##   Connect to the container at DOCKER_IP:3000
+##     replacing DOCKER_IP for the IP of your active docker host
 
-ENV IN_DOCKER true
+FROM gcr.io/bitnami-containers/minideb-extras:jessie-r14-buildpack
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+MAINTAINER Bitnami <containers@bitnami.com>
 
-# Install app dependencies
-COPY package.json /usr/src/app/
-COPY yarn.lock /usr/src/app/
-RUN yarn install --no-progress
+ENV STACKSMITH_STACK_ID="z7w3iv3" \
+    STACKSMITH_STACK_NAME="Node.js for sethbergman/admin-portal" \
+    STACKSMITH_STACK_PRIVATE="1"
 
-# Bundle app source
-COPY . /usr/src/app
+# Install required system packages
+RUN install_packages libc6 libssl1.0.0 libncurses5 libtinfo5 libsqlite3-0 zlib1g libbz2-1.0 libreadline6 libstdc++6 libgcc1 ghostscript imagemagick libmysqlclient18
 
-EXPOSE 8080
+RUN bitnami-pkg install node-9.3.0-0 --checksum 1ed17f7c5fd2b57af97ce5549bb642d4df330f4f14d81da3df03f2621b3afc11
 
-# defined in package.json
-CMD [ "npm", "run", "start" ]
+ENV PATH=/opt/bitnami/node/bin:/opt/bitnami/python/bin:$PATH \
+    NODE_PATH=/opt/bitnami/node/lib/node_modules
+
+## STACKSMITH-END: Modifications below this line will be unchanged when regenerating
+
+# ExpressJS template
+COPY . /app
+WORKDIR /app
+
+RUN npm install
+
+EXPOSE 3000
+CMD ["npm", "start"]
