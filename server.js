@@ -15,6 +15,7 @@ app.use('/src/images', express.static(__dirname + '/src/images'));
 app.use('/src/css', express.static(__dirname + '/src/css'));
 app.use('/src/js', express.static(__dirname + '/src/js'));
 app.use('/vendors', express.static(__dirname + '/vendors'));
+app.use('/vendors:', express.static(__dirname + '/vendors:'));
 app.use('/build', express.static(__dirname + '/build'));
 app.use(express.cookieParser());
 app.use(express.bodyParser());
@@ -166,8 +167,8 @@ app.get('/media-gallery', function (req, res){
 	res.render('media-gallery')
 })
 
-app.get('/morrisjs', function (req, res){
-	res.render('morrisjs')
+app.get('/morisjs', function (req, res){
+	res.render('morisjs')
 })
 
 app.get('/other-charts', function (req, res){

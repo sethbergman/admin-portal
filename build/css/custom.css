@@ -2739,7 +2739,7 @@ ul.social li {
     font-size: 18px
 }
 .percent:after {
-    content: '%';
+    content: '10%';
     margin-left: 0.1em;
     font-size: .8em
 }
