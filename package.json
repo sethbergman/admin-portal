@@ -18,9 +18,9 @@
   "homepage": "http://admin-portal.npmstack.com",
   "devDependencies": {
     "browser-sync": "^2.12.10",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-concat": "^2.6.0",
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "~2.6.1",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^3.0.0",
     "gulp-uglify": "^3.0.0"
@@ -36,6 +36,6 @@
     "passport": "^0.4.0",
     "path": "^0.12.7",
     "swig": "^1.4.2",
-    "winston": "^2.3.1"
+    "winston": "^3.0.0"
   }
 }
