@@ -1,0 +1,36 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "app/package.json",
+        "package.json",
+        "vendors/Chart.js/package.json",
+        "vendors/DateJS/package.json",
+        "vendors/Flot/package.json",
+        "vendors/animate.css/package.json",
+        "vendors/autosize/package.json",
+        "vendors/bootstrap-daterangepicker/package.json",
+        "vendors/bootstrap-datetimepicker/package.json",
+        "vendors/bootstrap-progressbar/package.json",
+        "vendors/bootstrap-wysiwyg/package.json",
+        "vendors/bootstrap/package.json",
+        "vendors/cropper/package.json",
+        "vendors/devbridge-autocomplete/package.json",
+        "vendors/echarts/package.json",
+        "vendors/eve/package.json",
+        "vendors/flot-spline/package.json",
+        "vendors/flot/package.json",
+        "vendors/ion.rangeSlider/package.json",
+        "vendors/jquery-knob/package.json",
+        "vendors/jquery.easy-pie-chart/package.json",
+        "vendors/jqvmap/package.json",
+        "vendors/jszip/package.json",
+        "vendors/morris.js/package.json",
+        "vendors/select2/package.json",
+        "vendors/starrr/package.json",
+        "vendors/switchery/package.json",
+        "vendors/transitionize/package.json"
+      ]
+    }
+  }
+}
